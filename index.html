@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Patterns for Day Trading</title>
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background color */
+            color: #fff; /* White text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        /* Background shapes */
+        .background-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            filter: blur(8px); /* Reduced blur */
+            opacity: 0.25; /* Slightly less dark */
+        }
+
+        .shape {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        /* Larger, evenly spaced shapes */
+        .triangle1 {
+            border-width: 0 500px 500px 0;
+            border-color: transparent #66FF66 transparent transparent;
+            top: 10%;
+            left: 0;
+        }
+
+        .triangle2 {
+            border-width: 0 0 400px 400px;
+            border-color: transparent transparent #55CC55 transparent;
+            bottom: 0;
+            right: 0;
+        }
+
+        .triangle3 {
+            border-width: 0 300px 300px 0;
+            border-color: transparent rgba(102, 255, 102, 0.5) transparent transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Headings and texts */
+        h1 {
+            color: #66FF66; /* Brighter, softer green accent for the heading */
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif; /* Modern font */
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for the Buy Now button */
+        .buy-btn {
+            background-color: #66FF66; /* Brighter green */
+            color: #000;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .buy-btn:hover {
+            background-color: #55CC55; /* Darker green on hover */
+        }
+
+        /* Placeholder for photo */
+        .photo-placeholder {
+            width: 700px;
+            height: auto; /* Allows height to adjust automatically */
+            background-color: #333; /* Dark grey placeholder */
+            margin: 0; /* Removes margins to avoid extra space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .photo-placeholder img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Ensures no extra space around image */
+        }
+
+        /* Description styling */
+        .description {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #fff;
+            font-size: 1.1rem; /* Adjusted font size */
+            text-align: left;
+            font-family: 'Poppins', sans-serif; /* Font for description */
+        }
+
+        .description h2 {
+            font-family: 'Poppins', sans-serif; /* Modern font for title */
+            font-weight: 600; /* Slightly less bold title */
+            margin-bottom: 20px; /* Increased space below the title */
+            color: #66FF66; /* Brighter green for title */
+        }
+
+        .description p {
+            margin-bottom: 20px; /* Increased space between paragraphs */
+        }
+
+        /* Styling for the rating section */
+        .rating-section {
+            margin-top: 30px;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .rating-stars button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 2rem;
+            color: #555;
+            transition: color 0.2s ease;
+        }
+
+        .rating-stars button:hover,
+        .rating-stars button.active {
+            color: #66FF66; /* Brighter green for active stars */
+        }
+
+        .rating-message {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #66FF66; /* Green message after rating */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background shapes -->
+    <div class="background-shapes">
+        <div class="shape triangle1"></div>
+        <div class="shape triangle2"></div>
+        <div class="shape triangle3"></div>
+    </div>
+
+    <!-- Product heading and description -->
+    <h1>Chart Patterns for Day Trading</h1>
+    <p>Professional chart patterns that will help you predict market movements. Our tools are the key to success in day trading.</p>
+
+    <!-- Placeholder for photograph -->
+    <div class="photo-placeholder">
+        <img src="zdj.jpg" alt="Chart Patterns">
+    </div>
+
+    <!-- Product description -->
+    <div class="description">
+        <h2>Product Description</h2>
+        <p>Discover our exclusive collection of trading patterns designed to elevate your trading skills and improve your market predictions. These professional chart patterns offer clear insights and actionable strategies for day trading.</p>
+        <p><strong>What You Get:</strong><br>
+        - Comprehensive Trading Patterns: Access a range of meticulously crafted chart patterns that are essential for successful day trading.<br>
+        - Detailed Guidelines: Each pattern comes with detailed instructions to help you effectively implement the strategies in your trading sessions.</p>
+        <p><strong>How It Works:</strong><br>
+        1. Purchase & Payment: After purchasing, you'll receive a confirmation email containing a secure link.<br>
+        2. Instant Access: Click on the link provided in the email to access a dedicated page with all the patterns and additional trading tips.</p>
+        <p><strong>Your Key to Trading Success:</strong><br>
+        Our patterns and guidance are designed to give you a competitive edge and enhance your trading outcomes. With clear visual aids and expert tips, you'll be well-equipped to navigate the market confidently.</p>
+        <p>Secure Your Patterns Today!</p>
+    </div>
+
+    <!-- Buy Now button with redirect functionality -->
+    <button class="buy-btn" onclick="redirectToPayment()">Buy Now</button>
+
+    <!-- Rating section -->
+    <div class="rating-section">
+        <h2>Rate this product</h2>
+        <div class="rating-stars">
+            <button onclick="rate(1)">&#9733;</button>
+            <button onclick="rate(2)">&#9733;</button>
+            <button onclick="rate(3)">&#9733;</button>
+            <button onclick="rate(4)">&#9733;</button>
+            <button onclick="rate(5)">&#9733;</button>
+        </div>
+        <div class="rating-message" id="ratingMessage"></div>
+    </div>
+
+    <!-- Script for rating functionality and redirection -->
+    <script>
+        function rate(stars) {
+            // Reset stars
+            const buttons = document.querySelectorAll('.rating-stars button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Activate selected stars
+            for (let i = 0; i < stars; i++) {
+                buttons[i].classList.add('active');
+            }
+
+            // Display thank you message
+            const ratingMessage = document.getElementById('ratingMessage');
+            ratingMessage.textContent = `Thank you for rating: ${stars} stars!`;
+        }
+
+        function redirectToPayment() {
+            // Redirect to payment page
+            window.location.href = 'https://buy.stripe.com/cN23g9gHjg5Tbw43cd';
+        }
+    </script>
+
+</body>
+</html>
